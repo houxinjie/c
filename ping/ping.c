@@ -73,7 +73,7 @@ int main(int argc, char * argv[]){
         exit(1);
     }
 
-    if((sockfd = socket(AF_INET, SOCK_RAW, IPPROTO_ICMP)) == -1){
+    if((sockfd = socket(AF_INET, SOCK_DGRAM, IPPROTO_ICMP)) == -1){
         printf("socket() error \n");
         exit(1);
     }
